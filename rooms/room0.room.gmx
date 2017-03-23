@@ -61,6 +61,58 @@
     <instance objName="Arbol_OBJ" x="224" y="96" name="inst_20E419A5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Arbol_OBJ" x="320" y="288" name="inst_69796469" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Arbol_OBJ" x="64" y="320" name="inst_C51F858A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Pared_OBJ" x="-32" y="-32" name="inst_A6B0FEBE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Pared_OBJ" x="-32" y="0" name="inst_7A05D5E8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Pared_OBJ" x="-32" y="32" name="inst_484CB2AB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Pared_OBJ" x="-32" y="64" name="inst_3CB5822D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Pared_OBJ" x="-32" y="96" name="inst_F0A3C911" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Pared_OBJ" x="-32" y="128" name="inst_3F915E79" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Pared_OBJ" x="-32" y="160" name="inst_DED4EA4C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Pared_OBJ" x="-32" y="192" name="inst_8D32AED0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Pared_OBJ" x="-32" y="224" name="inst_763F6483" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Pared_OBJ" x="-32" y="256" name="inst_473A800B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Pared_OBJ" x="-32" y="288" name="inst_4D068609" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Pared_OBJ" x="-32" y="320" name="inst_07F6C16F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Pared_OBJ" x="-32" y="352" name="inst_62AACE56" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Pared_OBJ" x="-32" y="384" name="inst_C3F16789" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Pared_OBJ" x="0" y="384" name="inst_A5FE92D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Pared_OBJ" x="32" y="384" name="inst_64FFA2E5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Pared_OBJ" x="64" y="384" name="inst_CD0458D4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Pared_OBJ" x="96" y="384" name="inst_ED0B87DF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Pared_OBJ" x="128" y="384" name="inst_D68807C4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Pared_OBJ" x="160" y="384" name="inst_A58331BA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Pared_OBJ" x="192" y="384" name="inst_2AC32B67" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Pared_OBJ" x="224" y="384" name="inst_AD1ADDE5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Pared_OBJ" x="256" y="384" name="inst_50FAB5AF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Pared_OBJ" x="288" y="384" name="inst_9E1EB339" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Pared_OBJ" x="320" y="384" name="inst_8CC8DECA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Pared_OBJ" x="352" y="384" name="inst_BF77FC8D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Pared_OBJ" x="384" y="384" name="inst_C808B993" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Pared_OBJ" x="384" y="352" name="inst_DA764528" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Pared_OBJ" x="384" y="320" name="inst_24F84020" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Pared_OBJ" x="384" y="288" name="inst_85D51B55" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Pared_OBJ" x="384" y="256" name="inst_5D3DC50A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Pared_OBJ" x="384" y="224" name="inst_BEC747FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Pared_OBJ" x="384" y="192" name="inst_128630A3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Pared_OBJ" x="384" y="160" name="inst_2A2D6B77" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Pared_OBJ" x="384" y="128" name="inst_70A64045" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Pared_OBJ" x="384" y="96" name="inst_3E94FE40" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Pared_OBJ" x="384" y="64" name="inst_1DBCD601" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Pared_OBJ" x="384" y="32" name="inst_925E3EC8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Pared_OBJ" x="384" y="0" name="inst_B6FC62FE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Pared_OBJ" x="384" y="-32" name="inst_A0DBA409" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Pared_OBJ" x="352" y="-32" name="inst_5C8DF5A1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Pared_OBJ" x="320" y="-32" name="inst_B72814B2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Pared_OBJ" x="288" y="-32" name="inst_5C4211E2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Pared_OBJ" x="256" y="-32" name="inst_2D1313A3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Pared_OBJ" x="224" y="-32" name="inst_93A572C0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Pared_OBJ" x="192" y="-32" name="inst_3F706218" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Pared_OBJ" x="160" y="-32" name="inst_DB4CE738" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Pared_OBJ" x="128" y="-32" name="inst_5ED08F5A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Pared_OBJ" x="96" y="-32" name="inst_14728727" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Pared_OBJ" x="64" y="-32" name="inst_B3728D26" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Pared_OBJ" x="32" y="-32" name="inst_64A111CE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Pared_OBJ" x="0" y="-32" name="inst_F88A3CF8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="terrain_atlas" x="0" y="0" w="32" h="32" xo="704" yo="96" id="10000001" name="inst_B8B4268E" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

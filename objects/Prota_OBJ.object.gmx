@@ -6,7 +6,7 @@
   <depth>0</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
-  <maskName>&lt;undefined&gt;</maskName>
+  <maskName>Mascara_Prota_SPR</maskName>
   <events>
     <event eventtype="0" enumb="0">
       <action>
@@ -37,6 +37,8 @@ enum estados_jugador {
 
 dir = "abajo" // Variable de direccion que tiene por defecto "abajo"
 estado = estados_jugador.parado // estado por defecto del prota
+
+global.debug = false; // Variable global debug inicializada a false
 
 </string>
           </argument>
@@ -108,7 +110,7 @@ vv =  (-keyboard_check(vk_up) + keyboard_check(vk_down)) * v;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// &lt;- Gestion de estado de movimiento
+            <string>/// Gestion de estado de movimiento
 
 // Determinamos direccion
 if (vv &gt; 0) dir = "abajo"; // nos estamos moviendo hacia abajo
@@ -154,7 +156,7 @@ else {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// &lt;- Gestion de estados de ataque
+            <string>/// Gestion de estados de ataque
 
 if (keyboard_check_pressed(ord('X'))and estado != estados_jugador.atacando) { // Si presionamos la tecla 'X' y ademas comprobamos que no estamos atacando ya que sino la animacion de atacar se cortaria. 
     // Atacar si no estamos atacando y reiniciamos animacion
@@ -181,12 +183,114 @@ if (keyboard_check_pressed(ord('X'))and estado != estados_jugador.atacando) { //
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>/// Gestion de colisiones contra paredes y objetos
+
+if (instance_place(x+vh,y,Pared_OBJ)) { vh = 0; } // Le sumamos la velocidad horizontal a la posicion actual para comprobar que hay una pared, y si la encuentra que se pare el prota
+if (instance_place(x,y+vv,Pared_OBJ)) { vv = 0; } // Lo mismo, pero con la velocidad vertical
+
+// Colision horizontal de objeto interactivo solo si está habilitada
+interactivo = instance_place(x+vh,y,Interactivo_OBJ); // Intentar encontrar un objeto interactivo
+if (interactivo) { // Si encontramos un objeto interactivo
+    if (interactivo.colision) { // Si tiene activada la colision
+        vh = 0;  // Cancelamos la velocidad horizontal
+    }
+}
+
+// Colision vertical de objeto interactivo solo si esta habilitada
+interactivo = instance_place(x,y+vv,Interactivo_OBJ);
+if (interactivo) {
+    if (interactivo.colision) {
+        vv = 0; // Cancelamos la velocidad vertical
+    }
+}
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
             <string>/// Establecer movimiento final y estado
 x += vh; // Sumar a la x la velocidad
 y += vv; // Sumar a la y la velocidad
 
 // Ejecutamos uno de los scripts de movimiento dependiendo de la variable estado
 script_execute(estado); 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="64">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// &lt;- Dibujar el debug
+
+if (global.debug) {
+    draw_set_font(f_Debug); // Establecemos la fuente
+    draw_set_halign(fa_left); // Alineacion arriba y a la izquierda
+    draw_set_color(c_white); // Color blanco
+    draw_set_alpha(0.5); // Transparencaia
+    draw_rectangle(0,0,270,75,false); // Dibujar un rectangulo donde va a ir el debug
+    draw_set_color(c_black); // Color de las letras en el rectangulo
+    draw_set_alpha(1); // Transparencia(maxima) de las letras
+    draw_text(2,2,"FPS/FPS REAL: " + string(fps) + "/" + string(fps_real)); // A una distancia de 2 pixeles, mostramos los fps y los fps reales.
+    draw_text(2,20,"ESTADO: " + script_get_name(estado)); // Segun la variable "estado" mostramos el script que se este ejecutando.
+    draw_text(2,38,"SPRITE: " + sprite_get_name(sprite_index)); // Sprite asignado en este momento
+    draw_text(2,56,"IMAGE INDEX: " + string(image_index)); 
+    
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="112">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>global.debug = !global.debug; // Activar y desactivar el debug cuando pulsemos F1
 </string>
           </argument>
         </arguments>

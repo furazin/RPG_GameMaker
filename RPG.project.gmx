@@ -19,6 +19,10 @@
     <sprites name="Escenario">
       <sprite>sprites\Arbol_SPR</sprite>
     </sprites>
+    <sprites name="Mascaras">
+      <sprite>sprites\Pared_SPR</sprite>
+      <sprite>sprites\Mascara_Prota_SPR</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\build_Atlas</background>
@@ -32,10 +36,14 @@
     <script>scripts\Prota_Caminando.gml</script>
     <script>scripts\Prota_Atacando.gml</script>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\f_Debug</font>
+  </fonts>
   <objects name="objects">
     <object>objects\Prota_OBJ</object>
     <object>objects\Interactivo_OBJ</object>
     <object>objects\Arbol_OBJ</object>
+    <object>objects\Pared_OBJ</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
