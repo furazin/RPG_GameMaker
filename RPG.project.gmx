@@ -6,16 +6,26 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\Prota_Abajo_SPR</sprite>
-    <sprite>sprites\Prota_Arriba_SPR</sprite>
-    <sprite>sprites\Prota_Izquierda_SPR</sprite>
-    <sprite>sprites\Prota_Derecha_SPR</sprite>
-    <sprite>sprites\Prota_AbajoAtaque_SPR</sprite>
-    <sprite>sprites\Prota_ArribaAtaque_SPR</sprite>
-    <sprite>sprites\Prota_IzquierdaAtaque_SPR</sprite>
-    <sprite>sprites\Prota_DerechaAtaque_SPR</sprite>
+    <sprites name="Protagonista">
+      <sprite>sprites\Prota_Abajo_SPR</sprite>
+      <sprite>sprites\Prota_Arriba_SPR</sprite>
+      <sprite>sprites\Prota_Derecha_SPR</sprite>
+      <sprite>sprites\Prota_Izquierda_SPR</sprite>
+      <sprite>sprites\Prota_ArribaAtaque_SPR</sprite>
+      <sprite>sprites\Prota_IzquierdaAtaque_SPR</sprite>
+      <sprite>sprites\Prota_AbajoAtaque_SPR</sprite>
+      <sprite>sprites\Prota_DerechaAtaque_SPR</sprite>
+    </sprites>
+    <sprites name="Escenario">
+      <sprite>sprites\Arbol_SPR</sprite>
+    </sprites>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\build_Atlas</background>
+    <background>background\furniture_Atlas</background>
+    <background>background\indoor_atlas</background>
+    <background>background\terrain_atlas</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\Prota_Parado.gml</script>
@@ -24,6 +34,8 @@
   </scripts>
   <objects name="objects">
     <object>objects\Prota_OBJ</object>
+    <object>objects\Interactivo_OBJ</object>
+    <object>objects\Arbol_OBJ</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

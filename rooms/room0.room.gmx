@@ -10,7 +10,13 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
-  <code></code>
+  <code>// Chuleta para las capas de Tiles
+
+// Estos numeros se corresponden a la profundidad de los objetos en el escenario
+// 10.000.000 =&gt; Suelo
+//  1.000.000 =&gt; Caminos, estructuras, adornos sobre suelo
+//    100.000 =&gt; Detalles y adornos sobre estructuras
+//      -1000 =&gt; Contenido siempre por encima del jugador (tejados)</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -52,8 +58,182 @@
   </views>
   <instances>
     <instance objName="Prota_OBJ" x="64" y="64" name="inst_9AB833FF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Arbol_OBJ" x="224" y="96" name="inst_20E419A5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Arbol_OBJ" x="320" y="288" name="inst_69796469" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Arbol_OBJ" x="64" y="320" name="inst_C51F858A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
-  <tiles/>
+  <tiles>
+    <tile bgName="terrain_atlas" x="0" y="0" w="32" h="32" xo="704" yo="96" id="10000001" name="inst_B8B4268E" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="32" y="0" w="32" h="32" xo="704" yo="96" id="10000002" name="inst_3826BED4" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="64" y="0" w="32" h="32" xo="704" yo="96" id="10000003" name="inst_7A3603A8" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="96" y="0" w="32" h="32" xo="704" yo="96" id="10000004" name="inst_88928900" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="128" y="0" w="32" h="32" xo="704" yo="96" id="10000005" name="inst_8AFB1962" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="160" y="0" w="32" h="32" xo="704" yo="96" id="10000006" name="inst_6CF8E1ED" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="192" y="0" w="32" h="32" xo="704" yo="96" id="10000007" name="inst_2EF0381D" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="224" y="0" w="32" h="32" xo="704" yo="96" id="10000008" name="inst_701B8896" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="256" y="0" w="32" h="32" xo="704" yo="96" id="10000009" name="inst_910D28C1" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="288" y="0" w="32" h="32" xo="704" yo="96" id="10000010" name="inst_BF2C4076" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="320" y="0" w="32" h="32" xo="704" yo="96" id="10000011" name="inst_C5BBD649" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="352" y="0" w="32" h="32" xo="704" yo="96" id="10000012" name="inst_F27AB937" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="352" y="32" w="32" h="32" xo="704" yo="96" id="10000013" name="inst_D599F22E" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="352" y="64" w="32" h="32" xo="704" yo="96" id="10000014" name="inst_61840F2C" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="352" y="96" w="32" h="32" xo="704" yo="96" id="10000015" name="inst_D02060E5" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="352" y="128" w="32" h="32" xo="704" yo="96" id="10000016" name="inst_BA4964E3" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="352" y="160" w="32" h="32" xo="704" yo="96" id="10000017" name="inst_962323FE" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="352" y="192" w="32" h="32" xo="704" yo="96" id="10000018" name="inst_033D4788" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="352" y="224" w="32" h="32" xo="704" yo="96" id="10000019" name="inst_D6BF881E" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="352" y="256" w="32" h="32" xo="704" yo="96" id="10000020" name="inst_C53EE67E" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="352" y="288" w="32" h="32" xo="704" yo="96" id="10000021" name="inst_EE760EEA" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="352" y="320" w="32" h="32" xo="704" yo="96" id="10000022" name="inst_3B64F310" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="352" y="352" w="32" h="32" xo="704" yo="96" id="10000023" name="inst_7E732625" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="320" y="352" w="32" h="32" xo="704" yo="96" id="10000024" name="inst_A42A5DEE" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="288" y="352" w="32" h="32" xo="704" yo="96" id="10000025" name="inst_6B5FE943" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="256" y="352" w="32" h="32" xo="704" yo="96" id="10000026" name="inst_99466C08" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="224" y="352" w="32" h="32" xo="704" yo="96" id="10000027" name="inst_68D20F80" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="192" y="352" w="32" h="32" xo="704" yo="96" id="10000028" name="inst_E4B7B2DE" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="160" y="352" w="32" h="32" xo="704" yo="96" id="10000029" name="inst_2D7AB488" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="128" y="352" w="32" h="32" xo="704" yo="96" id="10000030" name="inst_CB01EA49" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="96" y="352" w="32" h="32" xo="704" yo="96" id="10000031" name="inst_0A0F4A5E" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="64" y="352" w="32" h="32" xo="704" yo="96" id="10000032" name="inst_F7F1B423" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="32" y="352" w="32" h="32" xo="704" yo="96" id="10000033" name="inst_F313C3CE" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="0" y="352" w="32" h="32" xo="704" yo="96" id="10000034" name="inst_A623686C" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="0" y="320" w="32" h="32" xo="704" yo="96" id="10000035" name="inst_3901126B" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="0" y="288" w="32" h="32" xo="704" yo="96" id="10000036" name="inst_7A0606E2" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="0" y="256" w="32" h="32" xo="704" yo="96" id="10000037" name="inst_F288484F" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="0" y="224" w="32" h="32" xo="704" yo="96" id="10000038" name="inst_93EAB092" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="0" y="192" w="32" h="32" xo="704" yo="96" id="10000039" name="inst_89C9DFD8" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="0" y="160" w="32" h="32" xo="704" yo="96" id="10000040" name="inst_EFD1F91D" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="0" y="128" w="32" h="32" xo="704" yo="96" id="10000041" name="inst_D4E751B4" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="0" y="96" w="32" h="32" xo="704" yo="96" id="10000042" name="inst_A9EBAB21" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="0" y="64" w="32" h="32" xo="704" yo="96" id="10000043" name="inst_C142DC13" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="0" y="32" w="32" h="32" xo="704" yo="96" id="10000044" name="inst_A58B4481" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="32" y="32" w="32" h="32" xo="704" yo="96" id="10000045" name="inst_565B710E" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="64" y="32" w="32" h="32" xo="704" yo="96" id="10000046" name="inst_A32D66BE" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="96" y="32" w="32" h="32" xo="704" yo="96" id="10000047" name="inst_D422E0A2" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="128" y="32" w="32" h="32" xo="704" yo="96" id="10000048" name="inst_8594F8F0" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="160" y="32" w="32" h="32" xo="704" yo="96" id="10000049" name="inst_8FE29181" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="192" y="32" w="32" h="32" xo="704" yo="96" id="10000050" name="inst_1F42437E" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="224" y="32" w="32" h="32" xo="704" yo="96" id="10000051" name="inst_06770C16" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="256" y="32" w="32" h="32" xo="704" yo="96" id="10000052" name="inst_F9B5E5A5" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="288" y="32" w="32" h="32" xo="704" yo="96" id="10000053" name="inst_58CA5F4D" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="320" y="32" w="32" h="32" xo="704" yo="96" id="10000054" name="inst_40E63F2E" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="320" y="64" w="32" h="32" xo="704" yo="96" id="10000055" name="inst_E7811EFA" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="320" y="96" w="32" h="32" xo="704" yo="96" id="10000056" name="inst_7685C1B4" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="320" y="128" w="32" h="32" xo="704" yo="96" id="10000057" name="inst_CF5934B7" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="320" y="160" w="32" h="32" xo="704" yo="96" id="10000058" name="inst_B850F149" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="320" y="192" w="32" h="32" xo="704" yo="96" id="10000059" name="inst_FDA6ECE6" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="320" y="224" w="32" h="32" xo="704" yo="96" id="10000060" name="inst_86486A9C" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="320" y="256" w="32" h="32" xo="704" yo="96" id="10000061" name="inst_EE6BC7A4" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="320" y="288" w="32" h="32" xo="704" yo="96" id="10000062" name="inst_23B9A566" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="288" y="288" w="32" h="32" xo="704" yo="96" id="10000063" name="inst_18F4A60D" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="288" y="320" w="32" h="32" xo="704" yo="96" id="10000064" name="inst_AAA90646" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="256" y="320" w="32" h="32" xo="704" yo="96" id="10000065" name="inst_ED78F4FE" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="224" y="320" w="32" h="32" xo="704" yo="96" id="10000066" name="inst_90DD10C0" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="192" y="320" w="32" h="32" xo="704" yo="96" id="10000067" name="inst_2999ECA8" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="160" y="320" w="32" h="32" xo="704" yo="96" id="10000068" name="inst_81E36FC5" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="128" y="320" w="32" h="32" xo="704" yo="96" id="10000069" name="inst_D08EA0E7" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="96" y="320" w="32" h="32" xo="704" yo="96" id="10000070" name="inst_EEE27379" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="320" y="320" w="32" h="32" xo="704" yo="96" id="10000071" name="inst_D4C624D6" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="64" y="320" w="32" h="32" xo="704" yo="96" id="10000072" name="inst_34EC436A" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="32" y="320" w="32" h="32" xo="704" yo="96" id="10000073" name="inst_65268004" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="32" y="288" w="32" h="32" xo="704" yo="96" id="10000074" name="inst_0C38155E" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="32" y="256" w="32" h="32" xo="704" yo="96" id="10000075" name="inst_E7B24EB0" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="32" y="224" w="32" h="32" xo="704" yo="96" id="10000076" name="inst_428DD313" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="32" y="192" w="32" h="32" xo="704" yo="96" id="10000077" name="inst_7BF94223" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="32" y="160" w="32" h="32" xo="704" yo="96" id="10000078" name="inst_AF9CACC9" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="32" y="128" w="32" h="32" xo="704" yo="96" id="10000079" name="inst_D1EFAD82" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="32" y="96" w="32" h="32" xo="704" yo="96" id="10000080" name="inst_0FE71F7D" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="32" y="64" w="32" h="32" xo="704" yo="96" id="10000081" name="inst_A0C77071" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="64" y="64" w="32" h="32" xo="704" yo="96" id="10000082" name="inst_4668CC76" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="96" y="64" w="32" h="32" xo="704" yo="96" id="10000083" name="inst_8AD89B3F" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="128" y="64" w="32" h="32" xo="704" yo="96" id="10000084" name="inst_72B5930B" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="160" y="64" w="32" h="32" xo="704" yo="96" id="10000085" name="inst_467ADD05" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="192" y="64" w="32" h="32" xo="704" yo="96" id="10000086" name="inst_F2A6E86B" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="224" y="64" w="32" h="32" xo="704" yo="96" id="10000087" name="inst_82125D34" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="256" y="64" w="32" h="32" xo="704" yo="96" id="10000088" name="inst_C8ACCD84" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="288" y="64" w="32" h="32" xo="704" yo="96" id="10000089" name="inst_776DEEE0" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="288" y="96" w="32" h="32" xo="704" yo="96" id="10000090" name="inst_BB815F0B" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="288" y="128" w="32" h="32" xo="704" yo="96" id="10000091" name="inst_88A4D18B" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="288" y="160" w="32" h="32" xo="704" yo="96" id="10000092" name="inst_ECEC82B4" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="288" y="192" w="32" h="32" xo="704" yo="96" id="10000093" name="inst_B7B77B80" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="288" y="224" w="32" h="32" xo="704" yo="96" id="10000094" name="inst_756C608A" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="288" y="256" w="32" h="32" xo="704" yo="96" id="10000095" name="inst_3CE34BA6" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="256" y="256" w="32" h="32" xo="704" yo="96" id="10000096" name="inst_6967B429" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="256" y="288" w="32" h="32" xo="704" yo="96" id="10000097" name="inst_D6F8AD04" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="224" y="288" w="32" h="32" xo="704" yo="96" id="10000098" name="inst_F0A2D744" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="192" y="288" w="32" h="32" xo="704" yo="96" id="10000099" name="inst_8445984E" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="160" y="288" w="32" h="32" xo="704" yo="96" id="10000100" name="inst_7AD2C979" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="128" y="288" w="32" h="32" xo="704" yo="96" id="10000101" name="inst_520CE521" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="96" y="288" w="32" h="32" xo="704" yo="96" id="10000102" name="inst_FC406160" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="64" y="288" w="32" h="32" xo="704" yo="96" id="10000103" name="inst_73513E44" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="64" y="256" w="32" h="32" xo="704" yo="96" id="10000104" name="inst_B2567F41" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="96" y="256" w="32" h="32" xo="704" yo="96" id="10000105" name="inst_4FE8B96E" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="128" y="256" w="32" h="32" xo="704" yo="96" id="10000106" name="inst_B0CEF3CB" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="160" y="256" w="32" h="32" xo="704" yo="96" id="10000107" name="inst_BD5DA8AE" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="192" y="256" w="32" h="32" xo="704" yo="96" id="10000108" name="inst_864D15A0" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="224" y="256" w="32" h="32" xo="704" yo="96" id="10000109" name="inst_0DDF5D08" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="224" y="224" w="32" h="32" xo="704" yo="96" id="10000110" name="inst_D6B344C0" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="256" y="224" w="32" h="32" xo="704" yo="96" id="10000111" name="inst_1CDE295E" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="256" y="192" w="32" h="32" xo="704" yo="96" id="10000112" name="inst_8DBFDB9B" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="256" y="160" w="32" h="32" xo="704" yo="96" id="10000113" name="inst_C86B5D85" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="256" y="128" w="32" h="32" xo="704" yo="96" id="10000114" name="inst_678DDF85" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="256" y="96" w="32" h="32" xo="704" yo="96" id="10000115" name="inst_42EAA2A6" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="224" y="96" w="32" h="32" xo="704" yo="96" id="10000116" name="inst_EC1052B6" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="224" y="128" w="32" h="32" xo="704" yo="96" id="10000117" name="inst_DA372BCE" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="224" y="160" w="32" h="32" xo="704" yo="96" id="10000118" name="inst_ACF4F3F5" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="224" y="192" w="32" h="32" xo="704" yo="96" id="10000119" name="inst_1D24DEEE" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="192" y="192" w="32" h="32" xo="704" yo="96" id="10000120" name="inst_05CAC82D" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="192" y="224" w="32" h="32" xo="704" yo="96" id="10000121" name="inst_31C1B66C" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="160" y="224" w="32" h="32" xo="704" yo="96" id="10000122" name="inst_C762C534" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="128" y="224" w="32" h="32" xo="704" yo="96" id="10000123" name="inst_C4C6814B" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="96" y="224" w="32" h="32" xo="704" yo="96" id="10000124" name="inst_DFB3EB5F" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="64" y="224" w="32" h="32" xo="704" yo="96" id="10000125" name="inst_AA7500E2" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="64" y="192" w="32" h="32" xo="704" yo="96" id="10000126" name="inst_5FE83FF3" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="96" y="192" w="32" h="32" xo="704" yo="96" id="10000127" name="inst_17EF6DF0" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="128" y="192" w="32" h="32" xo="704" yo="96" id="10000128" name="inst_982756EF" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="160" y="192" w="32" h="32" xo="704" yo="96" id="10000129" name="inst_765EFC3F" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="160" y="160" w="32" h="32" xo="704" yo="96" id="10000130" name="inst_F0F3F51A" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="192" y="160" w="32" h="32" xo="704" yo="96" id="10000131" name="inst_055033E7" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="192" y="128" w="32" h="32" xo="704" yo="96" id="10000132" name="inst_4B958463" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="192" y="96" w="32" h="32" xo="704" yo="96" id="10000133" name="inst_C6C2AEE8" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="160" y="96" w="32" h="32" xo="704" yo="96" id="10000134" name="inst_B24E2295" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="160" y="128" w="32" h="32" xo="704" yo="96" id="10000135" name="inst_A8BA071F" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="128" y="128" w="32" h="32" xo="704" yo="96" id="10000136" name="inst_69018CCE" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="128" y="160" w="32" h="32" xo="704" yo="96" id="10000137" name="inst_988F3B48" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="96" y="160" w="32" h="32" xo="704" yo="96" id="10000138" name="inst_C54B014E" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="64" y="160" w="32" h="32" xo="704" yo="96" id="10000139" name="inst_65C90EE4" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="64" y="128" w="32" h="32" xo="704" yo="96" id="10000140" name="inst_CCE92E86" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="64" y="96" w="32" h="32" xo="704" yo="96" id="10000141" name="inst_55554ABA" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="96" y="96" w="32" h="32" xo="704" yo="96" id="10000142" name="inst_DE005FCD" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="96" y="128" w="32" h="32" xo="704" yo="96" id="10000143" name="inst_A31A2994" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="128" y="96" w="32" h="32" xo="704" yo="96" id="10000144" name="inst_7F7D0450" depth="10000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="224" y="32" w="32" h="32" xo="704" yo="160" id="10000145" name="inst_2FBC4AC4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="224" y="96" w="32" h="32" xo="704" yo="160" id="10000146" name="inst_46CAD7AB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="96" y="288" w="32" h="32" xo="704" yo="160" id="10000147" name="inst_8F20FA38" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="64" y="288" w="32" h="32" xo="704" yo="160" id="10000148" name="inst_E0C46A16" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="32" y="192" w="32" h="32" xo="672" yo="160" id="10000149" name="inst_E42A7134" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="0" y="192" w="32" h="32" xo="672" yo="160" id="10000150" name="inst_6006092D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="64" y="128" w="32" h="32" xo="672" yo="160" id="10000151" name="inst_2506C48B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="224" y="224" w="32" h="32" xo="672" yo="160" id="10000152" name="inst_26492DD5" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="224" y="256" w="32" h="32" xo="672" yo="160" id="10000153" name="inst_10488579" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="352" y="320" w="32" h="32" xo="672" yo="160" id="10000154" name="inst_3B21FAED" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="352" y="352" w="32" h="32" xo="672" yo="160" id="10000155" name="inst_2339614D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="352" y="160" w="32" h="32" xo="672" yo="160" id="10000156" name="inst_452466C4" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="96" y="256" w="32" h="32" xo="704" yo="352" id="10000157" name="inst_36F2DF9E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="128" y="256" w="32" h="32" xo="704" yo="352" id="10000158" name="inst_09F34128" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="96" y="64" w="32" h="32" xo="672" yo="352" id="10000159" name="inst_050C092F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="128" y="64" w="32" h="32" xo="672" yo="352" id="10000160" name="inst_D7A71F70" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="160" y="0" w="32" h="32" xo="672" yo="352" id="10000161" name="inst_DF996520" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="288" y="32" w="32" h="32" xo="576" yo="64" id="10000162" name="inst_E24D37B8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="288" y="64" w="32" h="32" xo="576" yo="96" id="10000163" name="inst_A65F174C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="288" y="96" w="32" h="32" xo="576" yo="128" id="10000164" name="inst_EFF2638B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="320" y="96" w="32" h="32" xo="608" yo="128" id="10000165" name="inst_60718A52" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="320" y="64" w="32" h="32" xo="608" yo="96" id="10000166" name="inst_F0C17C92" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="320" y="32" w="32" h="32" xo="608" yo="64" id="10000167" name="inst_679E0324" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="352" y="32" w="32" h="32" xo="640" yo="64" id="10000168" name="inst_CDB3EE1A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="352" y="64" w="32" h="32" xo="640" yo="96" id="10000169" name="inst_5E5DA689" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="terrain_atlas" x="352" y="96" w="32" h="32" xo="640" yo="128" id="10000170" name="inst_CF5075AB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+  </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
   <PhysicsWorldLeft>0</PhysicsWorldLeft>
