@@ -10,12 +10,17 @@
     <sprite>sprites\Prota_Arriba_SPR</sprite>
     <sprite>sprites\Prota_Izquierda_SPR</sprite>
     <sprite>sprites\Prota_Derecha_SPR</sprite>
+    <sprite>sprites\Prota_AbajoAtaque_SPR</sprite>
+    <sprite>sprites\Prota_ArribaAtaque_SPR</sprite>
+    <sprite>sprites\Prota_IzquierdaAtaque_SPR</sprite>
+    <sprite>sprites\Prota_DerechaAtaque_SPR</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\Prota_Parado.gml</script>
     <script>scripts\Prota_Caminando.gml</script>
+    <script>scripts\Prota_Atacando.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\Prota_OBJ</object>

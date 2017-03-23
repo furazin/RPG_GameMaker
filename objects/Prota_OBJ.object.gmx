@@ -31,7 +31,8 @@ image_speed = 0;
 // Enumerador en el que a cada valor le asignamos un script
 enum estados_jugador {
     parado = Prota_Parado,
-    caminando = Prota_Caminando
+    caminando = Prota_Caminando,
+    atacando = Prota_Atacando
 }
 
 dir = "abajo" // Variable de direccion que tiene por defecto "abajo"
@@ -107,22 +108,59 @@ vv =  (-keyboard_check(vk_up) + keyboard_check(vk_down)) * v;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Gestion de estado de movimiento
+            <string>/// &lt;- Gestion de estado de movimiento
 
 // Determinamos direccion
 if (vv &gt; 0) dir = "abajo"; // nos estamos moviendo hacia abajo
 else 
-    if (vv &lt; 0) dir ="arriba"; // nos estamos moviendo hacia arriba
-    else
-        if (vh &gt; 0) dir = "derecha"; // nos estamos moviendo hacia la derecha
-        else
-            if (vh &lt;0) dir = "izquierda"; // nos estamos moviendo hacia la izquierda
+if (vv &lt; 0) dir ="arriba"; // nos estamos moviendo hacia arriba
+else
+if (vh &gt; 0) dir = "derecha"; // nos estamos moviendo hacia la derecha
+else
+if (vh &lt;0) dir = "izquierda"; // nos estamos moviendo hacia la izquierda
             
-// Si tenemos una direccion establecemos el estado caminar
-if (dir != "") estado = estados_jugador.caminando;
-// Si no nos movemos establecemos el estado parado
-if (vh == 0 and vv == 0) estado = estados_jugador.parado;
+// Si no estamos atacando comprobamos estados parado y caminar
+if (estado != estados_jugador.atacando) {
+    // Si tenemos una direccion establecemos el estado caminar
+    if (dir != "") estado = estados_jugador.caminando;
+        // Pero si no nos movemos establecemos el estado parado
+        if (vh == 0 and vv == 0) estado = estados_jugador.parado;
+}
+// Si estamos atacando paramos el movimiento
+else {
+    vh = 0;
+    vv = 0;
+}
+            
 
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// &lt;- Gestion de estados de ataque
+
+if (keyboard_check_pressed(ord('X'))and estado != estados_jugador.atacando) { // Si presionamos la tecla 'X' y ademas comprobamos que no estamos atacando ya que sino la animacion de atacar se cortaria. 
+    // Atacar si no estamos atacando y reiniciamos animacion
+    estado = estados_jugador.atacando;
+    image_index = 0;
+}
 </string>
           </argument>
         </arguments>
