@@ -18,10 +18,13 @@
     </sprites>
     <sprites name="Escenario">
       <sprite>sprites\Arbol_SPR</sprite>
+      <sprite>sprites\Salida_SPR</sprite>
+      <sprite>sprites\Entrada_SPR</sprite>
     </sprites>
     <sprites name="Mascaras">
       <sprite>sprites\Pared_SPR</sprite>
       <sprite>sprites\Mascara_Prota_SPR</sprite>
+      <sprite>sprites\cuadrado</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -29,6 +32,7 @@
     <background>background\furniture_Atlas</background>
     <background>background\indoor_atlas</background>
     <background>background\terrain_atlas</background>
+    <background>background\House</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -44,9 +48,13 @@
     <object>objects\Interactivo_OBJ</object>
     <object>objects\Arbol_OBJ</object>
     <object>objects\Pared_OBJ</object>
+    <object>objects\cudrado_negro</object>
+    <object>objects\Entrada_OBJ</object>
+    <object>objects\Salida_OBJ</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
+    <room>rooms\Casa_ROOM</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

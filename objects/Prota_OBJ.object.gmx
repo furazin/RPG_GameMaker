@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>Mascara_Prota_SPR</maskName>
   <events>
@@ -37,6 +37,7 @@ enum estados_jugador {
 
 dir = "abajo" // Variable de direccion que tiene por defecto "abajo"
 estado = estados_jugador.parado // estado por defecto del prota
+salida = -1; // por defecto no aparecemos sobre una salida
 
 global.debug = false; // Variable global debug inicializada a false
 
@@ -204,6 +205,17 @@ if (interactivo) {
     }
 }
 
+// Gestion de colisiones contra entradas y cambio de room
+entrada = instance_place(x,y,Entrada_OBJ); // Comprobamos si en la posicion actual en la que nos estamos moviendo tenemos un objeto de tipo entrada
+with (entrada) { // Nos metemos dentro de ese objeto
+    if (room_exists(mapa)) {   // Comprobar room destino
+        other.salida = salida; // Guardamos la salida destino del mapa al que vamos a ir a parar. "other.salida" se está refiriendo a una variable salida pero del personaje. Y "salida" es la que está definida en el Creation Code del objeto Salida alojado en la room(casa) a la que queremos ir.
+        room_goto(mapa); // Nos transportamos al mapa
+     }
+    else show_message("No existe la room: " + entrada.mapa);
+}
+         
+
 </string>
           </argument>
         </arguments>
@@ -230,6 +242,40 @@ y += vv; // Sumar a la y la velocidad
 
 // Ejecutamos uno de los scripts de movimiento dependiendo de la variable estado
 script_execute(estado); 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Transportar al punto de salida si hay
+if (salida != -1) { // Comprobamos si hemos establecido una salida
+    // Iterar todas las salidas hasta encontrar destino
+    with(Salida_OBJ) { // Si encontramos nuestra salida(aquí tendremos que poner tantos with como salidas tengamos)
+        if (other.salida == nombre) { // "other.salida" es el nombre de la salida con la que acabamos de chocar y comprobamos que es igual a la variables nombre de la room de la salida
+            // Mover al jugador y reiniciar su próxima salida
+            other.x = x; // Coordenada X del jugador en la coordenada X de la salida
+            other.y = y; // Coordenada Y del jugador en la coordenada Y de la salida
+            other.salida = -1; // Reiniciamos la salida
+        }
+    }
+}
 </string>
           </argument>
         </arguments>
